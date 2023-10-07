@@ -1,0 +1,385 @@
+*{
+    scroll-behavior: smooth;
+    z-index: 0;
+}
+.theme{
+    transition: 280ms ease-out;
+}
+
+.theme.active{
+    transition: 280ms ease-in-out;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+
+.navbar--main{
+    width: 100%;
+    position: fixed;
+    transition: 280ms ease-out;
+    z-index: 100000000000000000;
+}
+
+.navbar--main.active{
+    transition: 280ms ease-in-out;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
+}
+.navbar--main.active.darkNav{
+    background-color: rgb(22, 22, 22);
+    box-shadow: 1px 5px 10px rgba(255, 255, 255, 0.363);
+
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.nav--btn:hover{
+    transition: 280ms ease-in-out;
+    transform: translateY(-10px);
+    color: black;
+}
+
+#skills{
+    padding: 5rem 0;
+    background-color: rgb(37, 37, 37);
+}
+
+#home{
+    height: 100vh;
+    display: flex;
+    background-image: url('../imgs/me.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: right;
+    background-size: 50%;
+}
+
+@media (max-width: 1200px) {
+
+    .mobile-nav{
+        display: contents;
+    }
+
+    .navbar--mobile{
+        width: 100%;
+        position: fixed;
+        transition: 280ms ease-out;
+        z-index: 100000000000000000;
+    }
+    
+
+    .navbar--mobile.active{
+        transition: 280ms ease-in-out;
+        background-color: white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
+    }
+    .navbar--mobile.active.darkNav{
+        background-color: rgb(22, 22, 22);
+        box-shadow: 1px 5px 10px rgba(255, 255, 255, 0.363);
+    
+    }
+
+
+
+
+    #home{
+        background-image: none;
+    }
+
+
+
+
+    .navbar--main{
+        display: none;
+    }
+}
+#project{
+    padding: 10rem 0; 
+}
+#about{
+    padding: 10rem 0;
+}
+
+#achievement{
+    padding: 10rem 0;
+}
+
+#contact{
+    padding: 10rem 0;
+}
+
+
+
+
+
+.scroll--btn{
+    width: fit-content;
+    border: 2px solid rgb(42, 27, 255);
+    color: rgb(42, 27, 255);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(42, 27, 255, 0.363);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 280ms ease-out;
+}
+
+.scroll--btn:hover{
+    transition: 280ms ease-in-out;
+    box-shadow: 0px 5px 20px rgba(42, 27, 255, 0.493);
+    text-shadow: 2px 2px 20px rgb(42, 27, 255) ;
+}
+
+
+.theme{
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+.icons.active{
+    filter: invert();
+}
+
+.intro{
+    font-size: 60px;
+}
+
+.me-2{
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+
+
+/* this is for the button style */
+.github-btn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+
+.github-btn:hover{
+    color: white;
+    text-shadow: 1px 1px 10px white;
+    background-color: rgb(11, 11, 11);
+    transition: 280ms ease-in-out;
+}
+
+
+/* this is for the social styles */
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #55595b;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+  }
+  
+  
+/* this is the card style */
+
+
+.menuIcon{
+    width: 25px;
+    height: 25px;
+    background-image: url('../imgs/menu.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.menuIcon.active{
+    background-image: url('../imgs/close.svg');
+}
+
+.menuIcon.dark.active{
+    filter: invert(1);
+}
+
+.menuIcon.dark{
+    filter: invert(1);
+}
+
+
+
+.cardP {
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cardP-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255,255,255,.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  }
+  
+  .cardP:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#336ce6, #7f53ef);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+
+
+/* this is the dropdown styels for the navigation in mobile view */
+
+
+.dropDownBar{
+    display: none;
+}
+
+.dropDownBar.active{
+    display: contents;
+}
+
+#dropDown{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    height: 100vh;
+    width: 30vh;
+    background-color: #ffffff;
+    animation-name: slide_bar;
+    animation-duration: 280ms;
+    animation-fill-mode: forwards;
+    transition: 280ms ease-in-out;
+}
+
+
+#dropDown.active{
+    background-color: rgb(22, 22, 22);;
+}
+
+
+
+@keyframes slide_bar {
+    0% { transform: translateX(-100px);}
+    100% { transform: translateX(0);}
+}
+
+
