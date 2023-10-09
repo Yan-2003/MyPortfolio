@@ -1,3 +1,14 @@
+
+window.addEventListener('load', function(){
+    let loaderPage = document.querySelector('#loader_section')
+    let page = this.document.querySelector('.theme')
+    setTimeout(function(){
+        loaderPage.style.display = 'none'
+        page.style.display = 'contents'
+    }, 2000)
+})
+
+
 const home = document.querySelector('#home')
 const nav = document.querySelector('.navbar--main')
 const navM = document.querySelector('.navbar--mobile')

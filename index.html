@@ -9,32 +9,17 @@
     <link rel="shortcut icon" href="imgs/down.svg" type="image/x-icon">
     <title>Jull</title>
 </head>
-<body class="theme">
-    <nav class="navbar navbar-expand-xl navbar-light p-5 navbar--main">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">JULLIANE TAMPUS</a>
-            <ul class="navbar-nav">
-                <li class="nav-item nav--btn p-2"><a class="nav-link" href="#home">HOME</a></li>
-                <li class="nav-item nav--btn p-2"><a class="nav-link" href="#skills">STACKS</a></li>
-                <li class="nav-item nav--btn p-2"><a class="nav-link" href="#project">PROJECTS</a></li>
-                <li class="nav-item nav--btn p-2"><a class="nav-link" href="#about">ABOUT</a></li>
-                <li class="nav-item nav--btn p-2"><a class="nav-link" href="#achievement">ACHIEVEMENTS</a></li>
-                <li class="nav-item nav--btn p-2"><a class="nav-link" href="#contact">CONTACT</a></li>
-                <li class="nav-item p-2"><button class="btn theme" onclick="theme()"><img class="icons" src="imgs/sun.svg" alt=""></button></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- this is the mobile nav for the mobile view  -->
-
-    <div class="mobile-nav">
-        <nav class="navbar navbar-expand-xl navbar-light p-5 navbar--mobile">
+<!-- this is the loader section  -->
+<body>
+    <div class="container-fuild" id="loader_section">
+        <div class="loader"></div>
+        <p class="mt-5">Loading please wait......</p>
+    </div>
+    <div class="contianer-fluid theme">
+        <nav class="navbar navbar-expand-xl navbar-light p-5 navbar--main">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand fs-6">JULLIANE TAMPUS</a>
-                <button onclick="openside()" class="btn"><div class="menuIcon"></div></button>
-            </div>
-            <div class="dropDownBar">
-                <div id="dropDown" class="navbar-nav">
-                    <br><br><br><br><br>
+                <a href="#" class="navbar-brand">JULLIANE TAMPUS</a>
+                <ul class="navbar-nav">
                     <li class="nav-item nav--btn p-2"><a class="nav-link" href="#home">HOME</a></li>
                     <li class="nav-item nav--btn p-2"><a class="nav-link" href="#skills">STACKS</a></li>
                     <li class="nav-item nav--btn p-2"><a class="nav-link" href="#project">PROJECTS</a></li>
@@ -42,144 +27,178 @@
                     <li class="nav-item nav--btn p-2"><a class="nav-link" href="#achievement">ACHIEVEMENTS</a></li>
                     <li class="nav-item nav--btn p-2"><a class="nav-link" href="#contact">CONTACT</a></li>
                     <li class="nav-item p-2"><button class="btn theme" onclick="theme()"><img class="icons" src="imgs/sun.svg" alt=""></button></li>
-                </div>
+                </ul>
             </div>
         </nav>
+        <!-- this is the mobile nav for the mobile view  -->
+    
+        <div class="mobile-nav">
+            <nav class="navbar navbar-expand-xl navbar-light p-5 navbar--mobile">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand fs-6">JULLIANE TAMPUS</a>
+                    <button onclick="openside()" class="btn"><div class="menuIcon"></div></button>
+                </div>
+                <div class="dropDownBar">
+                    <div id="dropDown" class="navbar-nav">
+                        <br><br><br><br><br>
+                        <li class="nav-item nav--btn p-2"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item nav--btn p-2"><a class="nav-link" href="#skills">STACKS</a></li>
+                        <li class="nav-item nav--btn p-2"><a class="nav-link" href="#project">PROJECTS</a></li>
+                        <li class="nav-item nav--btn p-2"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item nav--btn p-2"><a class="nav-link" href="#achievement">ACHIEVEMENTS</a></li>
+                        <li class="nav-item nav--btn p-2"><a class="nav-link" href="#contact">CONTACT</a></li>
+                        <li class="nav-item p-2"><button class="btn theme" onclick="theme()"><img class="icons" src="imgs/sun.svg" alt=""></button></li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+    
+    
+        <!-- this is the main content of the landing page -->
+        <section class="container" id="home">
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="contianer w-75 align-self-center">
+                        <h1 class="fw-bold intro">Hi, I'm Julliane!</h1>
+                        <p class="fs-4 col-lg-8 col-md-auto">I’m 20 years old studied at Caraga State University taking the course of Bachelor of Science Information Technology a Full Stack Developer and an aspiring Software Engineer.</p>
+                        <a href="#about" class=" scroll--btn mt-5 p-3">About me <img src="imgs/down.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container text-light pt-lg-5 pb-lg-5">
+                <h1 class="fw-bold pt-lg-5">MY STACKS</h1>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/html-5.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/css-3.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/js.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/c-.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/php.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/java.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/python.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/mysql.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/postgre.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/node-js.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/laravel.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/react.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/bootstrap.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/github.png" alt=""></div>
+                    <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/git.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <div class="container">
+                <h1 class="text-center fw-bold mt-lg-5">MY PROJECTS</h1>
+                <div class="container">
+                    <br><br><br><br>    
+                    <div class="row d-flex align-items-center justify-content-center gap-5">
+                        <div class="col-lg-4 col-md-5">
+                            <div class="cardP card">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="cardP-inner">
+                                    <img src="/imgs/project/EduBlogger.png" class="card-img-top w-100 p-4" alt="...">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">EduBlogger</h5>
+                                        <p class="card-text">This project is creating a blogging system for the Caraga State University student.</p>
+                                        <a href="https://github.com/orgs/EduBlogger/repositories" class="github-btn">Click Here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5">
+                            <div class="cardP card">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="cardP-inner">
+                                    <img src="/imgs/project/EazySari.png" class="card-img-top w-100 p-4" alt="...">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title">EazySari</h5>
+                                        <p class="card-text">This project involves creating a comprehensive system that monitors the inventory and profits of a store.</p>
+                                        <a href="https://github.com/EazySari/EazySari" class="github-btn">Click Here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h1 class="fw-bold mt-lg-5">ABOUT ME</h1>
+                <div class="row d-flex align-items-center justify-content-evenly">
+                    <div class="col-lg-4 col-sm-9 pt-5 px-5"><img class="w-100 me-2" src="imgs/me-2.JPG" alt=""></div>
+                    <div class="col-lg-4 col-sm-9 pt-5 px-5"><p class="fs-5 text-justify">Hello, I am Julliane J. Tampus, currently pursuing a Bachelor of Science degree in Information Technology at Caraga State University. My passion for computer technology has been a consistent part of my academic journey since high school. I have always been intrigued by the inner workings of computers and their profound utility in various aspects of life. My current focus is on programming and the development of well-structured applications, which I find both intellectually stimulating and personally rewarding.</p></div>
+                </div>
+            </div>
+        </section>
+        <seciton id="achievement">
+            <div class="container">
+                <h1 class="fw-bold mt-lg-5">MY ACHIEVEMENTS</h1>
+                <div class="container">
+    
+                    <div class="row d-flex align-items-center justify-content-center gap-5 m-5">
+                        <div class="col-lg-5 col-sm-12 m-2 "><img class="w-100" src="/imgs/myachievement/html.jpg" alt=""></div>
+                        <div class="col-lg-5 col-sm-12 m-2 "><p class="fs-4 text-justify">This is my certificate for completing the course of introduction to HTML in sololearn where I learn the basic fundamentals of HTML. I also learn how to properly structure a website and I also learn other tags in html that I never knew exist.</p></div>
+                    </div>
+    
+                    <div class="row d-flex align-items-center justify-content-center gap-5 m-5">
+                        <div class="col-lg-5 col-sm-12 m-2"><p class="fs-4 text-justify">This is my certificate for completing the course of introduction to CSS in sololearn where I learn the basic fundamentals of CSS. I also learn how to properly style a website and other variation of styles and how to make your website visually appealing.</p></div>
+                        <div class="col-lg-5 col-sm-12 m-2"><img class="w-100" src="/imgs/myachievement/css.jpg" alt=""></div>
+                    </div>
+    
+                    <div class="row d-flex align-items-center justify-content-center gap-5 m-5">
+                        <div class="col-lg-5 col-sm-12 m-2"><img class="w-100" src="/imgs/myachievement/webdesign1.jpg" alt=""></div>
+                        <div class="col-lg-5 col-sm-12 m-2"><p class="fs-4 text-justify">This is my certification of winning a Web Design competition in College of Computing And Information Science (CCIS) Days 2022 taking the first place of the competition.</p></div>
+                    </div>
+    
+                </div>
+            </div>
+        </seciton>
+        <section id="training">
+            <div class="container">
+                <h1 class="fw-bold mt-lg-5">TRAININGS AND SEMINARS</h1>
+                <div class="container">
+                    <div class="row">
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="bg-secondary h-100 text-light">
+            <div class="container m-auto">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 m-auto text-center"><h1 class="fw-lighter">Get in Touch</h1></div>
+                    <div class="col-lg-4 col-md-5 m-auto text-center ">
+                        <p>Address: P-2B Bading Butuan City <br>Email: Julliane.tampus123@gmail.com <br>Contact No. 09632813030</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contianer">
+                <h5 class="text-center">My Socials</h5>
+                <div class="wrapper">
+                    <a href="https://www.facebook.com/yan.julliane.kd.21" class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fab fa-facebook-f"></i></span>
+                    </a>
+                    <a href="https://github.com/Yan-2003" class="icon twitter">
+                        <span class="tooltip">GitHub</span>
+                        <span><i class="fab fa-twitter"></i></span>
+                    </a>
+                    <a href="https://www.instagram.com/jull.dev/" class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </div>
 
-
-
-    <!-- this is the main content of the landing page -->
-    <section class="container" id="home">
-        <div class="row">
-            <div class="col d-flex flex-column justify-content-center">
-                <div class="contianer w-75 align-self-center">
-                    <h1 class="fw-bold intro">Hi, I'm Julliane!</h1>
-                    <p class="fs-4 col-lg-8 col-md-auto">I’m 20 years old studied at Caraga State University taking the course of Bachelor of Science Information Technology a Full Stack Developer and an aspiring Software Engineer.</p>
-                    <a href="#about" class=" scroll--btn mt-5 p-3">About me <img src="imgs/down.svg" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="container text-light pt-lg-5 pb-lg-5">
-            <h1 class="fw-bold pt-lg-5">MY STACKS</h1>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/html-5.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/css-3.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/js.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/c-.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/php.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/java.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/python.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/mysql.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/postgre.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/node-js.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/laravel.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/react.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/bootstrap.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/github.png" alt=""></div>
-                <div class="col-lg-4 col-md-5 p-4 text-center"><img class="w-25" src="imgs/git.png" alt=""></div>
-            </div>
-        </div>
-    </section>
-    <section id="project">
-        <div class="container">
-            <h1 class="text-center fw-bold mt-lg-5">MY PROJECTS</h1>
-            <div class="container">
-                <br><br><br><br>    
-                <div class="row d-flex align-items-center justify-content-center gap-5">
-                    <div class="col-lg-4 col-md-5">
-                        <div class="cardP card">
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                            <div class="cardP-inner">
-                                <img src="/imgs/project/EduBlogger.png" class="card-img-top w-100 p-4" alt="...">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title">EduBlogger</h5>
-                                    <p class="card-text">This project is creating a blogging system for the Caraga State University student.</p>
-                                    <a href="https://github.com/orgs/EduBlogger/repositories" class="github-btn">Click Here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-5">
-                        <div class="cardP card">
-                            <div class="circle"></div>
-                            <div class="circle"></div>
-                            <div class="cardP-inner">
-                                <img src="/imgs/project/EazySari.png" class="card-img-top w-100 p-4" alt="...">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title">EazySari</h5>
-                                    <p class="card-text">This project involves creating a comprehensive system that monitors the inventory and profits of a store.</p>
-                                    <a href="https://github.com/EazySari/EazySari" class="github-btn">Click Here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <h1 class="fw-bold mt-lg-5">ABOUT ME</h1>
-            <div class="row d-flex align-items-center justify-content-evenly">
-                <div class="col-lg-4 col-sm-9 pt-5 px-5"><img class="w-100 me-2" src="imgs/me-2.JPG" alt=""></div>
-                <div class="col-lg-4 col-sm-9 pt-5 px-5"><p class="fs-5 text-justify">Hello, I am Julliane J. Tampus, currently pursuing a Bachelor of Science degree in Information Technology at Caraga State University. My passion for computer technology has been a consistent part of my academic journey since high school. I have always been intrigued by the inner workings of computers and their profound utility in various aspects of life. My current focus is on programming and the development of well-structured applications, which I find both intellectually stimulating and personally rewarding.</p></div>
-            </div>
-        </div>
-    </section>
-    <seciton id="achievement">
-        <div class="container">
-            <h1 class="fw-bold mt-lg-5">MY ACHIEVEMENTS</h1>
-            <div class="container">
-
-                <div class="row d-flex align-items-center justify-content-center gap-5 m-5">
-                    <div class="col-lg-5 col-sm-12 m-2 "><img class="w-100" src="/imgs/myachievement/html.jpg" alt=""></div>
-                    <div class="col-lg-5 col-sm-12 m-2 "><p class="fs-4 text-justify">This is my certificate for completing the course of introduction to HTML in sololearn where I learn the basic fundamentals of HTML. I also learn how to properly structure a website and I also learn other tags in html that I never knew exist.</p></div>
-                </div>
-
-                <div class="row d-flex align-items-center justify-content-center gap-5 m-5">
-                    <div class="col-lg-5 col-sm-12 m-2"><p class="fs-4 text-justify">This is my certificate for completing the course of introduction to CSS in sololearn where I learn the basic fundamentals of CSS. I also learn how to properly style a website and other variation of styles and how to make your website visually appealing.</p></div>
-                    <div class="col-lg-5 col-sm-12 m-2"><img class="w-100" src="/imgs/myachievement/css.jpg" alt=""></div>
-                </div>
-
-                <div class="row d-flex align-items-center justify-content-center gap-5 m-5">
-                    <div class="col-lg-5 col-sm-12 m-2"><img class="w-100" src="/imgs/myachievement/webdesign1.jpg" alt=""></div>
-                    <div class="col-lg-5 col-sm-12 m-2"><p class="fs-4 text-justify">This is my certification of winning a Web Design competition in College of Computing And Information Science (CCIS) Days 2022 taking the first place of the competition.</p></div>
-                </div>
-
-            </div>
-        </div>
-    </seciton>
-    <section id="contact" class="bg-secondary h-100 text-light">
-        <div class="container m-auto">
-            <div class="row">
-                <div class="col-lg-4 col-md-5 m-auto text-center"><h1 class="fw-lighter">Get in Touch</h1></div>
-                <div class="col-lg-4 col-md-5 m-auto text-center ">
-                    <p>Address: P-2B Bading Butuan City <br>Email: Julliane.tampus123@gmail.com <br>Contact No. 09632813030</p>
-                </div>
-            </div>
-        </div>
-        <div class="contianer">
-            <h5 class="text-center">My Socials</h5>
-            <div class="wrapper">
-                <a href="https://www.facebook.com/yan.julliane.kd.21" class="icon facebook">
-                    <span class="tooltip">Facebook</span>
-                    <span><i class="fab fa-facebook-f"></i></span>
-                </a>
-                <a href="https://github.com/Yan-2003" class="icon twitter">
-                    <span class="tooltip">GitHub</span>
-                    <span><i class="fab fa-twitter"></i></span>
-                </a>
-                <a href="https://www.instagram.com/jull.dev/" class="icon instagram">
-                    <span class="tooltip">Instagram</span>
-                    <span><i class="fab fa-instagram"></i></span>
-                </a>
-            </div>
-        </div>
-    </section>
 </body>
 <script src="/bootstrap-5.0.2-dist//js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
