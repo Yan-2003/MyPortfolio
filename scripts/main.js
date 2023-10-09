@@ -1,7 +1,7 @@
 
 window.addEventListener('load', function(){
     let loaderPage = document.querySelector('#loader_section')
-    let page = this.document.querySelector('.theme')
+    let page = document.querySelector('#main-content')
     setTimeout(function(){
         loaderPage.style.display = 'none'
         page.style.display = 'contents'
